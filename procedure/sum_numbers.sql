@@ -13,6 +13,3 @@ END;
 
 -- return the original sign to delimiter -- 
 DELIMITER ;
-
-CALL add_numbers(5, 8);
-CALL add_numbers(17, -8);
