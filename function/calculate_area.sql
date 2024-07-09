@@ -3,9 +3,9 @@
 DELIMITER //
 
 CREATE FUNCTION IF NOT EXISTS calculate_area_circ(radius DECIMAL(10, 2))
-    RETURNS DECIMAL(10, 2) DETERMINISTIC
+    RETURNS VARCHAR(256) DETERMINISTIC
 BEGIN
-    RETURN (radius * 3.1415);
+    RETURN concat(radius * radius * PI(), ' m³');
 END;
 //
 
